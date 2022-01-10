@@ -29,12 +29,22 @@ public class GeneralValidations {
 		assert !WebUI.getWindowTitle().isEmpty()
 	}
 
+	/***
+	 * verify current page title match the expected title
+	 * @param expectedTitle
+	 * @author nesma
+	 */
+	public static void verifyCurrentPageTitleValue(String expectedTitle) {
+		assert WebUI.getWindowTitle().equals(expectedTitle)
+	}
+
 	/**
 	 * Verify Current Page URL matched the passed url
-	 * @param expectedURL
+	 * @param expectedURL expectedURL or part of expectedURL
 	 * @author waleedafifi
+	 * @author nesma
 	 */
 	public static void verifyCurrentPageURL(String expectedURL) {
-		assert WebUI.getUrl().equals(expectedURL)
+		assert WebUI.getUrl().contains(expectedURL)
 	}
 }

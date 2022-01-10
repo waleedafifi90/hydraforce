@@ -1,4 +1,4 @@
-package actions
+package validations
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -20,23 +20,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class HeaderActions {
-
+public class CategoryPageValidations {
 	/***
-	 * Hovering on products nav item
-	 * @author Norhan salman
-	 */
-	public static void hoverOverProducts() {
-		TestObject products = findTestObject("Object Repository/HeaderObjects/a_products");
-		WebUI.mouseOver(products)
-	}
-	
-	/***
-	 * clicking on electronic vehicle control link
+	 * Verify current page heading match the expected heading
+	 * @param expectedHeading
 	 * @author nesma
 	 */
-	public static void clickOnElectronicVehicleControl() {
-		TestObject electronicControlLink = findTestObject('Object Repository/HeaderObjects/a_electronicVehicleControlGroups')
-		WebUI.click(electronicControlLink)
+	public static void verfiyCurrentPageHeading(String expectedHeading) {
+		TestObject categoryHeading = findTestObject('Object Repository/CategoryPageObjects/h1_categoryName')
+		assert WebUI.getText(categoryHeading).equalsIgnoreCase(expectedHeading)
 	}
 }
