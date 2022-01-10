@@ -23,6 +23,10 @@ import internal.GlobalVariable
 import validations.GeneralValidations
 
 public class GeneralHelpers {
+	/***
+	 * initialise the website
+	 * @author walid afifi
+	 */
 	public static void initScenario() {
 		WebUI.openBrowser('');
 		WebUI.maximizeWindow()
