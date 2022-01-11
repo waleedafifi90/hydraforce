@@ -30,4 +30,5 @@ public class GeneralActions {
 		TestObject acceptCookiesButton = findTestObject("Object Repository/GeneralObjects/a_acceptCookies");
 		WebUI.click(acceptCookiesButton);
 	}
+	
 }

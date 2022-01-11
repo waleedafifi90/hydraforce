@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "5144BAE881C9A075FC058CA68EA8CB08",
+  "keywordFileContentHash": "B05B6B37C3DFFDECA6519D5B94E44DCA",
   "keywordClasses": [
     {
       "name": "validations.CategoryPageValidations",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

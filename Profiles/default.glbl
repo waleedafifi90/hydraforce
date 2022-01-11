@@ -14,4 +14,9 @@
       <initValue>10</initValue>
       <name>pageLoadTimeOut</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>10</initValue>
+      <name>elementVisibilityTimeOut</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
